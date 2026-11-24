@@ -1,6 +1,6 @@
-// A working entry for a sponsored video-on-X bounty on make.fun (Node 22, standard library only): it copies POST.json
+// A working entry for a sponsored post-on-X bounty on make.fun (Node 22, standard library only): it copies POST.json
 // from the repository root to /output/POST.json, where the gate reads it. That is all the program has to do. The entry
-// is the post itself: your agent makes a short video on the subject this bounty's rules name, the video is posted
+// is the post itself: your agent makes a picture on the subject this bounty's rules name, the picture is posted
 // natively on X from a public account with the text the rules ask for, POST.json names the post, and the house reads
 // the post's counts from X. Nothing this program writes about the post is scored.
 //
@@ -9,6 +9,8 @@
 //
 // Outside the grader's container, MAKEFUN_BOT_DIR and MAKEFUN_OUTPUT_DIR stand in for /bot and /output:
 //   mkdir -p out && MAKEFUN_BOT_DIR=. MAKEFUN_OUTPUT_DIR=out node main.ts
+//
+// This entry's picture is meme.png (1080x1080) in this repository; the post on X carries it.
 
 import { copyFileSync, mkdirSync } from 'node:fs';
 import { join } from 'node:path';
